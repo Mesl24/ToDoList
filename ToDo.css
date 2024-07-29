@@ -4,13 +4,15 @@ body{
     color: white;   
     font-size: 18px;
     font-weight: bold;
+    margin: 30px 100px;
 }
 
 .title{
     text-align: center;
-    border-bottom: 1px solid white;
+    border: 1px solid white;
     border-radius: 10px;
-    margin: 40px 100px;
+    display: block;
+    margin: auto;
 }
 
 .input-bar,
@@ -31,17 +33,22 @@ body{
     grid-template-columns: 300px 160px 120px;
     justify-content: center;
     column-gap: 15px;
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 
 .added-item{
     row-gap: 20px;
 }
 
+.container{
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
 .delete-btn{
     color: white;
     background-color: red;
-    height: 50px;
     border: none;
     border-radius: 10px;
     font-size: 16px;
@@ -57,34 +64,23 @@ body{
     text-wrap: nowrap;
 }
 
-.js-para{
-    margin-left: 9px;
-}
-
 .delete-btn,
 .submit-btn{
     cursor: pointer;
 }
 
-@media screen and (max-width: 595px){
-    .container,
-    .added-item{
-        display: grid;
-        grid-template-columns: 140px 130px 100px ;
-    }
-    .submit-btn,
-    .delete-btn{
-        font-size: 14px;
-        text-wrap: nowrap;
-    }
+@media screen and (max-width: 625px){
+    body,
     .input-bar,
     .input-date,
-    .js-para{
-        font-size: 14px;
+    .delete-btn,
+    .submit-btn{
+        font-size: 12px;
     }
-    
-    .delete-btn{
-        height: 40px;
-        
-    }
-}   
+
+    .container,
+    .added-item{
+    display: grid;
+    grid-template-columns: 120px 100px 100px;
+}
+}
