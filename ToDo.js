@@ -1,7 +1,5 @@
 const toDo = [];
 
-alert(`To Hide Just Press "Add Or Hide" Button When No Input Data Is Entered !`)
-
 // Adding EventListner for clicking and Pressing
 const submitButtonElement = document.querySelector('.submit-btn');
 submitButtonElement.addEventListener('click', () => {
@@ -21,6 +19,7 @@ inputDateElement.addEventListener('keypress', (e) => {
         addToDo();
     }
 })
+
 
 
 //Adding the Todo to the Array
@@ -64,7 +63,6 @@ function displayToDo(){
             </button>`
             htmlELement += html;
             if(toDoELement.name === ''){
-                document.querySelector('.added-item').innerHTML = '';
                 toDo.splice(i,1);
             }else{ 
                 document.querySelector('.added-item').innerHTML = htmlELement;
